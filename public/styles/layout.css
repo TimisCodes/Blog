@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.all{
+    padding-bottom: 50px;
+}
+.ad{
+    position: fixed;
+    width: 100%;
+    display: flex;
+    background-color: black;
+    color: white;
+}
+.ad p{
+    padding: 5px 5px 5px 100px;
+}
+header{
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 28px;
+    padding: 30px 20px 0px 20px;
+    /* margin: 50px 10px 0px 40px; */
+    background-color: white; 
+}
+header i{
+    font-size: 20px;
+}
+.media a{
+   margin: 10px;
+}
+.logo{
+    margin-right: 200px;
+}
+.logo a{
+    text-decoration: none;
+    font-size: 40px;
+    color: red;
+}
+.search{
+    margin-right: 100px;
+}
+/* .search h4{
+    position: relative;
+    text-decoration: none;
+    color: white;
+    background-color: red;
+    font-size: 15px;
+    margin: 0px 50px 40px 40px;
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+} */
+.section-1 {
+    position: fixed;
+    margin-top: 120px;
+    width: 100%;
+    background-color: white;
+}
+
+.services {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 0.1px solid lightgray;
+    border-bottom: 0.1px solid lightgray;
+}
+
+.services a {
+    text-decoration: none;
+    color: black;
+    margin: 20px;
+}
+.services a.active {
+    color: #fff;
+    background-color: #ff0000; /* or any highlight color */
+    padding: 10px 10px;
+    border-radius: 5px;
+}

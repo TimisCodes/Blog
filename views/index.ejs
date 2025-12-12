@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<%- include("partials/header.ejs") %>
+<head>
+    <link rel="stylesheet" href="/styles/content.css">
+</head>
+<body>
+     
+    <section class="main-body">
+
+        <% main.forEach(main => { %>
+
+            <div class="content-1">
+                <img src="<%= main.image %>" alt="<%= main.artist %>">
+      
+                <!-- THIS is where the headline links to the dynamic page -->
+
+                <a href="/post/<%= main.id %>">
+                    <h3><%= main.title %></h3>
+                </a>
+      
+                <p><%= main.content %></p>
+            </div>
+      
+        <% }) %>
+
+        </section>
+
+</body>
+</html>

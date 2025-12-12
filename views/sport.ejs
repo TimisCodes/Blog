@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<%- include("partials/header.ejs") %>
+<head>
+    <link rel="stylesheet" href="/styles/content.css">
+</head>
+<body>
+     
+    <section class="main-body">
+        
+        <% sport.forEach(sport => { %>
+            <% if (sport.category === "sport") { %>
+                <div class="content-1">
+                    <img src="<%= sport.image %>" alt="<%= sport.artist %>">
+        
+                    <!-- Headline linking to the dynamic sport page -->
+                    <a href="/sport/<%= sport.id %>">
+                        <h3><%= sport.title %></h3>
+                    </a>
+        
+                    <p><%= sport.content %></p>
+                </div>
+            <% } %>
+        <% }) %>
+        
+
+        
+        </section>
+
+</body>
+</html>

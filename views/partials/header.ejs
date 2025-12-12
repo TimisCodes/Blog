@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link rel="stylesheet" href="/styles/content.css">
+    <link rel="stylesheet" href="/styles/layout.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+    <div class="all">
+
+    <div class="ad">
+        <p> Advertise with us | <%=date %></p>
+    </div>
+    <header>
+
+        <div class="media">
+            <a href="https://www.facebook.com"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.instagram.com"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.whatsapp.com"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="https://www.twitter.com"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="https://www.linkedIn.com"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://www.tiktok.com"><i class="fa-brands fa-tiktok"></i></a>
+            <a href="https://www.telegram.com"><i class="fa-brands fa-telegram"></i></a>
+        </div>
+
+        <div class="logo">
+            <a href="#">CONVEENIT</a>
+            <p><center>Convenience at your Door<center></p>
+        </div>
+
+        <div class="search">
+            <a href="#"><a href="#"><i class="fa-brands fa-facebook"></i></a>
+
+            <!-- <h4>Subscribe to News E-Paper</h4> -->
+        </div>
+
+    </header>
+
+    <section class="section-1">
+        <div class="services">
+        <a href="/home" class="<%= currentPage === 'home' ? 'active' : '' %>"> Home </a>
+        <a href="/news" class="<%=currentPage === 'news' ? 'active' : '' %>"> News</a>
+        <a href="/business" class="<%= currentPage === 'business' ? 'active' : '' %>" >Business</a>
+        <a href="/sport" class="<%= currentPage === 'sport' ? 'active' : '' %>">Sports</a>
+        <a href="/health" class="<% currentPage === "health" ? 'active' : '' %>"> Health</a>
+        <a href="/videos" class="<% currentPage === "videos" ? "active" : '' %>">Videos</a>
+        <a href="/entertainment" class="<%= currentPage === 'entertainment' ? 'active' : '' %>">Entertainment</a>
+        </div>
+    </section>
+    </div>
+</body>
+</html>
